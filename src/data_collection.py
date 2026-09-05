@@ -1,12 +1,11 @@
 import pandas as pd
 import yfinance as yf 
 
-def data_collection():
+def data_collection(ticker):
    df = yf.download(
-      "TCS.NS",
+      ticker,
       start ="2021-09-05",
       end = "2026-09-05"
     
    )
-   df.to_csv("data/TCS_stock.csv")
    return df
