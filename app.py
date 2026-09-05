@@ -27,5 +27,7 @@
 # EDA Conclusions
 
 from src.data_collection import data_collection
+from src.data_cleaning import data_cleaning
 df = data_collection()
+df = data_cleaning(df)
 print(df.head())

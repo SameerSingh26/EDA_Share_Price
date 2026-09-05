@@ -6,5 +6,7 @@ def data_collection():
       "TCS.NS",
       start ="2021-09-05",
       end = "2026-09-05"
+    
    )
+   df.to_csv("data/TCS_stock.csv")
    return df
